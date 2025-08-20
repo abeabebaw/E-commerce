@@ -1,0 +1,124 @@
+/* describitionbox.css */
+
+/* Base styles for all devices */
+.DescriptionBox {
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.descriptionbox-nav-box {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.descriptionbox-nav-box-fade {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #888;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.descriptionbox-nav-box:hover,
+.descriptionbox-nav-box-fade:hover {
+  background: #f0f0f0;
+}
+
+.descriptionbox-description {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 4px 4px;
+  background: white;
+}
+
+.descriptionbox-description p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+  .DescriptionBox {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+  
+  .descriptionbox-description {
+    padding: 15px;
+  }
+  
+  .descriptionbox-description p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media (max-width: 480px) {
+  .DescriptionBox {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  .descriptionbox-navigator {
+    margin-bottom: 10px;
+  }
+  
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    padding: 8px 12px;
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .descriptionbox-description {
+    padding: 12px;
+  }
+  
+  .descriptionbox-description p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* Small mobile styles (360px and below) */
+@media (max-width: 360px) {
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  
+  .descriptionbox-description {
+    padding: 10px;
+  }
+}

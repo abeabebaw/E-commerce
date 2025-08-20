@@ -1,0 +1,61 @@
+.breadcrum {
+ 
+  align-items: center;
+  gap: 8px;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.breadcrum__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding-top: 70px;
+  list-style: none;
+}
+
+.breadcrum__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrum__link {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.breadcrum__link:hover {
+  color: #3b82f6;
+}
+
+.breadcrum__current {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.breadcrum__separator {
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .breadcrum {
+    padding: 1rem 0;
+  }
+  
+  .breadcrum__link,
+  .breadcrum__current {
+    font-size: 0.75rem;
+  }
+}

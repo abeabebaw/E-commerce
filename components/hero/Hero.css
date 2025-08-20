@@ -1,0 +1,142 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  padding: 0 8%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 50px;
+  line-height: 1.1;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hand-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hand-hand-icon p {
+  color: #171717;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hand-icon {
+  width: 70px;
+}
+
+.hero-collections-text p {
+  color: #171717;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-collections-text p:last-child {
+  color: #ff4141;
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 280px;
+  height: 60px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+  background: #e63939;
+  transform: scale(1.05);
+}
+
+.hero-latest-btn img {
+  width: 16px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 5%;
+    gap: 50px;
+  }
+  
+  .hero-left {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hand-hand-icon {
+    justify-content: center;
+  }
+  
+  .hero-collections-text {
+    text-align: center;
+  }
+  
+  .hero-latest-btn {
+    margin: 30px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hand-hand-icon p,
+  .hero-collections-text p {
+    font-size: 40px;
+  }
+  
+  .hero-left h2 {
+    font-size: 20px;
+  }
+  
+  .hero-latest-btn {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+  }
+}

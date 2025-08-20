@@ -1,0 +1,128 @@
+/* newsletter.css */
+
+.newsletter {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 40px max(5vw, 20px);
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter h1 {
+  color: #454545;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+.newsletter p {
+  color: #454545;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  max-width: 600px;
+}
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+}
+
+.newsletter-input input {
+  flex: 1;
+  min-width: 0; /* Fixes flexbox overflow issue */
+  padding: 16px 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50px;
+  outline: none;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input input:focus {
+  border-color: #ff4141;
+  box-shadow: 0 0 0 2px rgba(255, 65, 65, 0.2);
+}
+
+.newsletter-input button {
+  padding: 16px 30px;
+  border-radius: 50px;
+  background: #ff4141;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-input button:hover {
+  background: #e63939;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 65, 65, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .newsletter {
+    margin: 60px auto;
+    padding: 30px 20px;
+    gap: 15px;
+  }
+  
+  .newsletter-input {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .newsletter-input input,
+  .newsletter-input button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    margin: 40px auto;
+    padding: 25px 15px;
+    gap: 12px;
+  }
+  
+  .newsletter h1 {
+    line-height: 1.2;
+  }
+  
+  .newsletter-input input,
+  .newsletter-input button {
+    padding: 12px 18px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.newsletter {
+  animation: fadeIn 0.8s ease forwards;
+}
